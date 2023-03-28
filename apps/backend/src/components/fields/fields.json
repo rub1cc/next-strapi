@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_amenities_fields",
+  "info": {
+    "displayName": "Amenities",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "wifi": {
+      "type": "boolean"
+    },
+    "tv": {
+      "type": "boolean"
+    },
+    "kitchen": {
+      "type": "boolean"
+    },
+    "free_parking": {
+      "type": "boolean"
+    },
+    "pool": {
+      "type": "boolean"
+    },
+    "ac": {
+      "type": "boolean"
+    }
+  }
+}

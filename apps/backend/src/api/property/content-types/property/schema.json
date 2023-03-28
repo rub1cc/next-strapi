@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "land_size": {
+      "type": "decimal",
+      "required": true
+    },
+    "building_size": {
+      "type": "decimal"
+    },
+    "building_level": {
+      "type": "integer"
+    },
+    "bedrooms": {
+      "type": "integer"
+    },
+    "beds": {
+      "type": "integer"
+    },
+    "bathrooms": {
+      "type": "integer"
+    },
+    "price": {
+      "required": true,
+      "type": "integer"
+    },
+    "price_type": {
+      "type": "enumeration",
+      "enum": [
+        "monthly",
+        "anually"
+      ],
+      "required": true
+    },
+    "amenities": {
+      "type": "component",
+      "repeatable": false,
+      "component": "fields.fields"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
